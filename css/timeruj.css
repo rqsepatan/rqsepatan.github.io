@@ -1,0 +1,183 @@
+.proses {
+  font-size: 16px;
+  color:rgb(238, 151, 0);
+}
+
+.proses:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+  animation: ellipsis steps(4,end) 900ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+
+.selesai {
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+ 
+}
+.nexam {
+  font-size: 16px;
+  background-color:#fff;
+  padding:4px;
+  color: rgb(0, 0, 0); }
+
+ 
+.uji {
+  font-size: 16px;
+  color: rgb(176, 181, 182); }
+  #myCounter {
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&text=0123456789);
+  .counter-group {
+    margin: 0px auto;
+    display: inline-block;
+  }
+  
+  .counter-group:after {
+    clear: both;
+  }
+  .counter-block {
+    float: left;
+    margin-right: 20px;
+  }
+  .counter-block .counter {
+    position: relative;
+    width: 36px;
+    height: 90px;
+    overflow: hidden;
+    font-weight: 700;
+    font-family: 'Open Sans Condensed', 'Arial Narrow', 'Nimbus Sans L', sans-serif;
+  }
+  .counter-block .counter .number {
+    padding: 1%;
+    width: 46%;
+    height: 98%;
+    font-size: 40px;
+
+    position: absolute;
+  
+    line-height: 150px;
+    top: -10000px;
+  }
+  .counter-block .counter .number.tens {
+    left: 0;
+  }
+  .counter-block .counter .number.units {
+    left: 50%;
+  }
+  .counter-block .counter .number.hundreds {
+    display: none;
+  }
+  .counter-block .counter .number.show {
+    top: 0;
+    z-index: 2;
+  }
+  .counter-block .counter .number.hidden-down {
+    top: 100%;
+  }
+  .counter-block .counter .number.hidden-up {
+    top: -100%;
+    z-index: 100;
+  }
+  .counter-block .counter.with-hundreds {
+    width: 300px;
+  }
+  .counter-block .counter.with-hundreds .number {
+    width: 30.66%;
+  }
+  .counter-block .counter.with-hundreds .number.tens {
+    left: 33.33%;
+  }
+  .counter-block .counter.with-hundreds .number.units {
+    left: 66.66%;
+  }
+  .counter-block .counter.with-hundreds .number.hundreds {
+    display: block;
+    left: 0;
+  }
+  .counter-block .counter-caption {
+    font-size: 70%;
+  }
+  @media (max-width: 992px) {
+    .counter-group {
+      margin: 10px auto;
+    }
+    .counter-block {
+      margin-right: 10px;
+    }
+    .counter-block .counter {
+      width: 20px;
+      height: 100px;
+      overflow: hidden;
+      font-weight: 700;
+    }
+    .counter-block .counter .number {
+      font-size: 108px;
+      line-height: 90px;
+    }
+    .counter-block .counter.with-hundreds {
+      width: 180px;
+    }
+    .counter-block .counter-caption {
+      font-size: 70%;
+    }
+  }
+  @media (max-width: 768px) {
+    .counter-group {
+      margin: 0 auto;
+    }
+    .counter-block {
+      margin-right: 8px;
+    }
+    .counter-block .counter {
+      width: 96px;
+      height: 80px;
+    }
+    .counter-block .counter .number {
+      font-size: 26px;
+      line-height: 72px;
+    }
+    .counter-block .counter.with-hundreds {
+      width: 144px;
+    }
+    .counter-block .counter-caption {
+      font-size: 70%;
+    }
+  }
+  @media (max-width: 480px) {
+    .counter-block .counter {
+      width: 21px;
+      height: 20px;
+    }
+    .counter-block .counter .number {
+      font-size: 19px;
+      line-height: 20px;
+    }
+    .counter-block .counter.with-hundreds {
+      width: 50px;
+    }
+    .counter-block .counter-caption {
+      width: 20px;
+      font-size: 40%;
+    }
+  }
+  

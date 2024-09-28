@@ -1,0 +1,38 @@
+.scbox{
+    position: fixed;
+    right:18px;
+    top:5px;
+}
+
+.scinput {
+    padding: 15px;
+    width: 39px;
+    height: 39px;
+    background: none;
+    border: 3px solid #000000;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Lexend Deca, sans-serif;
+    font-size: 15px;
+    color: #000000;
+    outline: none;
+    transition: .5s;
+}
+.scbox:hover input{
+    width: 125px;
+    background: #ffffff6b;
+    border-radius: 25px;
+}
+.scbox img{
+    position: absolute;
+    top: 37%;
+    right: 0px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #000000;
+    transition: .2s;
+}
+.scbox:hover img{
+    opacity: 0;
+    z-index: -1;
+}

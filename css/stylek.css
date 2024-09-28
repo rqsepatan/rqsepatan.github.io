@@ -1,0 +1,204 @@
+@property --gap{
+  syntax: '<length>';
+  inherits: true;
+  initial-value: 0;
+}
+@property --angle{
+  syntax: '<angle>';
+  inherits: true;
+  initial-value: 0deg;
+}
+
+.pp {
+
+  width: 100px;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+  border-radius: 50%;
+  margin: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.pp:hover {
+  --angle: 0deg;
+  --gap: 5px;
+}
+
+@import url(https://db.onlinewebfonts.com/c/aa580ee3796d87cb4a23d7975982cae9?family=Harlekin);
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+#slideshow {
+    margin: 80px auto;
+
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  #slideshow > div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+/* ---- Base Rules ---- */
+
+
+ 
+body {
+ 
+  color:rgb(39, 37, 37);
+
+
+
+    background: 	#000000 url('../img/rqo.png');
+    background-repeat: inherit;
+    margin: 0;
+    font-size:14px;
+    font-family: Lexend Deca, sans-serif;
+
+}
+input:read-only {
+  background-color: rgb(168, 168, 165);
+}
+
+
+a {
+	color: #319cbc;
+	text-decoration: none;
+  font-size: 16px;
+}
+
+a:hover, a:focus {
+	color: #7c888d;
+}
+
+.timeline img { 
+  width:150px;
+}
+header {
+ 
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  background-image:url('../img/hulu.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-bottom: 3em;
+  margin-left:0;
+    bottom:0px;
+
+}
+
+
+
+
+.handap {
+  
+  margin:0;padding:0;
+  overflow:hidden;
+}
+.handap li {
+  padding: 2em;
+  color:#fff; }
+.handap li span {
+  display:block;
+  font-size:1.4em;
+  margin-bottom:1em;
+  color: rgb(255, 255, 255);
+}
+
+.handap {
+  color:#fff;
+  display:grid;
+  list-style-type:none;
+  margin:0;padding:0;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+}
+.timeline img { 
+  width:150px;
+  justify-self:center;
+}
+
+
+
+
+  
+  /* Properti lain tidak ditulis agar lebih singkat */
+
+
+@media only screen and (max-width: 500px) {
+  
+  
+  .handap  {
+    display:none;
+      font-size:16px;
+  }
+
+
+}
+/* Typeography General*/
+
+
+h1 {
+   
+
+    font-size: 18pt;
+    color: #fff;
+}
+
+p {
+    line-height: 1.6em;
+    color: #eee;
+}
+
+/* ---- Layout Rules ---- */
+
+
+
+/* Header Styles */
+
+/* Footer Styles */
+footer {
+  background:url('../img/sokor.png');
+  background-repeat: no-repeat;
+ 
+  background-size: 100% 100%;
+  padding: 3em;
+margin-right:0;
+  bottom:0px;
+}
+.page__footer {
+  background:url('../img/sokor.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 3em;
+
+  bottom:0px;
+  
+
+}
+
+.page__footer p{
+    color: #fff;
+}
+
+.post {margin:20px;padding:12px;width:100%;}
+.desc {text-align:center;padding:20px;}
+.isi {padding:5px;margin:11px;}
+
+html,
+body {
+	height: 100%;
+}
+
+
